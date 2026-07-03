@@ -1,0 +1,66 @@
+.top-bar {
+    background-color: rgb(186, 206, 233);
+    display: flex;
+    justify-content: space-between;
+    width: 1890px;
+    padding-top: 25px; padding-bottom: 25px;
+    padding-left: 25px; padding-right: 25px;
+}
+.logo-box {
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-start;
+}
+.logo-box  img {
+    width: 200px; height: 50px;
+}
+.menu01 {
+    display: flex;
+    align-items: center;
+}
+.menu01-ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.m01-item:hover {
+    text-decoration: underline;
+    color: #5a5cc5;
+}
+.m01-item01, .m01-item02, .m01-item03, .m01-item04, .m01-item05 {
+    font-size: 15px;
+    font-weight: 600;
+}
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+.user-menu-ul { 
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.u-item01 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.user-menu-btn {
+    border: 1px solid #333;
+    display: flex;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 10px;
+}
+.user-menu-btn:hover {
+    background-color: #00026d;
+    color: #f4f7ff;
+    transition: 0.3s;
+
+}
+.u-item03 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600; 
+}
