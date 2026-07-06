@@ -28,6 +28,8 @@
     font-size: 15px;
     font-weight: 600;
 }
+/* 화면에서 마우스 올렸을때 2,3차 메뉴 안나옴
+어디 코드가 문제일까요 */
 .menu02 {
     width: 1620px;
     justify-content: center;
