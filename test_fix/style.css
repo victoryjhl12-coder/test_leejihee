@@ -51,7 +51,7 @@
     transition: 0.5s;
 }
 .menu01:hover > .menu02 {
-    border-top: 1px solid rgba(0, 0, 0, 1)
+    border-top: 1px solid rgba(0, 0, 0, 1);
     height: 400px;
 }
 .menu02 > .container {
@@ -64,34 +64,97 @@
     align-items: center;
     width: 400px;
 }
-.user-menu {
+.m02-img-item {
+    width: 300px;
+    height: 300px;
+}
+.m02-img-item>a {height: 100%;}
+.m02-img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mn02-nav {
+    flex-grow: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.mn02-nav>ul {
+    display: flex;
+    gap: 80px;
+}
+.m02-item>a {
+    font-size: 54px;
+    font-weight: 700;
+    color: #333;
+    transition: 0.3s;
+}
+.m02-item:hover>a {
+    color: blue;
+    text-decoration: underline;
+}
+.m02-item {
+    position: relative;
+}
+.mn03-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 20px);
+    justify-content: space-between;
+    display: none;
+}
+.m02-item:hover > .mn03-nav{
+    display: flex;
+}
+.m03-item>a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #565656;
+    transition: 0.3s;
+}
+.m03-item:hover>a {
+    color: #333;
+    text-decoration: underline;
+}
+.user-menu {
+    display: flex;
+    justify-content: flex-end;
 }
 .user-menu-ul { 
     display: flex;
     justify-content: flex-end;
     gap: 15px;
 }
-.u-item01 {
+.user-item {
+    color: #000;
+    font-size: 11px;
+    font-weight: 700px;
+    line-height: 15px;
+}
+.user-item01 >a {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 800;
+    line-height: 1;
 }
-.user-item02 {
+.user-item02 >a {
     border: 1px solid #333;
-    display: flex;
-    text-align: center;
-    border-radius: 15px;
-    font-size: 10px;
-    font-weight: 500;
-    padding: 10px;
+    padding: 9px 18px;
+    border-radius: 20px;
+    line-height: 1;
 }
-.user-item02 > a:hover {
+.user-item02:hover > a {
     background-color: #111;
     color: #fff;
 }
-.u-item03 {
-    text-align: center;
-    font-size: 15px;
-    font-weight: 600; 
+.u-item03 >a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.menu-svg {
+    width: 4px;
+    height: 18px;
+    fill: #111;
 }
