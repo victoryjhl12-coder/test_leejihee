@@ -1,36 +1,64 @@
-header {
-    border: 1px solid violet;
-}
 .top-bar {
-    border: 1px solid blueviolet;
+    /* 라인 그라디언트 기능 각도, 색 퍼센트 순으로 되어있음 */
+    background: linear-gradient(90deg,#f7f7f7 0%, #9fc5df 62%, #82add0 100%);
     display: flex;
     padding-left: 100px; padding-right: 100px;
     justify-content: space-between;
     height: 116px;
 }
+.top-bar:hover {
+    background: linear-gradient(90deg,#dbc6f0 0%, #7863c4 62%, #5158bd 100%);
+}
 .logo-box {
-    border: 1px solid blue;
     align-self: center;
 }
 .logo-box img {
     width: 220px;
 }
-.menu01 {
-    border: 1px solid blue;
-}
-.menu01>ul {
+.menu01 > ul {
     display: flex;
+    align-items: center;
+    gap: 50px;
     height: 100%;
-    align-self: center;
+}
+.m01-item:hover a {
+    text-decoration: underline;
+}
+/* 후손 선택 */
+.m01-item a {
+    font-size: 15px; font-weight: 500;
+    /* 쨍한건 눈 아프니까 명도 살짝올려서 사용 */
+    color: #333;
 }
 .user-box {
-    border: 1px solid blue;
     align-self: center;
 }
 .user-box>ul {
     display: flex;
+    align-items: center;
+    gap: 16px;
 }
-.user-item03>a{
+.user-item01 a {
+    font-size: 27px;
+    font-weight: 700;
+}
+.user-item02 {
+    border: 1px solid #333;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.user-item02:hover {
+    background-color: rgb(198, 228, 255);
+    border: 1px solid #333;
+    color: rgb(36, 22, 112);
+}
+.user-item02 a {
+    font-size: 15px;
+}
+.user-item03 a{
     display: flex;
-
+    align-items: center;
+    font-size: 15px;
 }
+/* 마지막에 선정리 -> 싹 지우기 */
